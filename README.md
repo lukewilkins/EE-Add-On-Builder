@@ -1,4 +1,4 @@
-EePackageGenerator
+EEPackageGenerator
 ==================
 
 Package Builder for ExpressionEngine
