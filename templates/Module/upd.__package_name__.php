@@ -22,8 +22,6 @@ class ${package_class_name}_upd {
 		$this->EE =& get_instance();
 	}
 
-	// ----------------------------------------------------------------
-
 	/**
 	 * Installation Method
 	 *
@@ -34,7 +32,7 @@ class ${package_class_name}_upd {
 		$mod_data = array(
 			'module_name'			=> '${package_class_name}',
 			'module_version'		=> $this->version,
-			'has_cp_backend'		=> "y",
+			'has_cp_backend'		=> "${package_has_control_panel_page}",
 			'has_publish_fields'	=> 'n'
 		);
 
@@ -48,8 +46,6 @@ class ${package_class_name}_upd {
 
 		return TRUE;
 	}
-
-	// ----------------------------------------------------------------
 
 	/**
 	 * Uninstall
@@ -75,8 +71,6 @@ class ${package_class_name}_upd {
 
 		return TRUE;
 	}
-
-	// ----------------------------------------------------------------
 
 	/**
 	 * Module Updater

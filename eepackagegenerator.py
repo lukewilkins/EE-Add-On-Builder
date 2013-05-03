@@ -29,7 +29,7 @@ class EePackageGeneratorCommand(sublime_plugin.WindowCommand):
         if sublime.platform() == "windows":
             default_package_path = os.path.expanduser("~\\My Documents\\" + self.package_name)
         else:
-            default_package_path = os.path.expanduser("~/Desktop/" + self.package_name)
+            default_package_path = os.path.expanduser("~/Documents/" + self.package_name)
         self.window.show_input_panel("Package Location:", default_package_path, self.on_package_path, None, None)
 
     def on_package_path(self, path):
@@ -51,6 +51,17 @@ class EePackageGeneratorCommand(sublime_plugin.WindowCommand):
         self.tokens = ['package_full_name', 'package_author', 'package_author_url', 'package_version', 'package_doc_url', 'package_description']
         self.token_name = ['Package Full Name', 'Author', 'Author URL', 'Version Number', 'Documentation URL', 'Description']
         self.token_values = {'package_name': self.package_name, 'package_path': self.package_path, 'package_class_name': self.package_name.capitalize()}
+        self.boolean_tokens = ['package_has_control_panel_page', 'package_has_control_panel_settings']
+        if (self.chosen_template_name.lower() == 'module'):
+            self.tokens.append('package_has_control_panel_page')
+            self.token_name.append('Has Control Panel Page? (y/n)')
+        elif (self.chosen_template_name.lower() == 'extension'):
+            self.tokens.append('package_has_control_panel_settings')
+            self.token_name.append('Has Control Panel Settings? (y/n)')
+            self.tokens.append('package_ext_hook')
+            self.token_name.append('First Extension Hook')
+            self.tokens.append('package_ext_hook_method')
+            self.token_name.append('Method First Extension Hook Maps To')
         self.get_next_token_value()
 
     def get_next_token_value(self):
@@ -61,14 +72,19 @@ class EePackageGeneratorCommand(sublime_plugin.WindowCommand):
             self.replace_tokens()
 
     def on_token_value(self, token_value):
-        self.token_values[self.tokens[self.token_index]] = token_value
+        if self.tokens[self.token_index] in self.boolean_tokens:
+            if token_value == 'y':
+                self.token_values[self.tokens[self.token_index]] = 'y'
+            else:
+                self.token_values[self.tokens[self.token_index]] = 'n'
+        else:
+            self.token_values[self.tokens[self.token_index]] = token_value
         self.token_index += 1
         self.get_next_token_value()
 
     def replace_tokens(self):
         for root, subFolders, files in os.walk(self.package_path):
             for filename in files:
-                print os.path.join(root, filename)
                 file_ref = open(os.path.join(root, filename), "rU")
                 template = file_ref.read()
                 file_ref.close()

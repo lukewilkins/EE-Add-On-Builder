@@ -20,8 +20,6 @@ class ${package_class_name} {
 		$this->EE =& get_instance();
 	}
 
-	// ----------------------------------------------------------------
-
 	/**
 	 * Start on your custom code here...
 	 */
