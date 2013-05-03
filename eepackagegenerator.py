@@ -55,7 +55,7 @@ class EePackageGeneratorCommand(sublime_plugin.WindowCommand):
         self.token_name = ['Package Full Name', 'Author', 'Author URL', 'Version Number', 'Documentation URL', 'Description']
         self.token_values = {'package_name': self.package_name, 'package_path': self.package_path, 'package_class_name': self.package_name.capitalize()}
         self.boolean_tokens = ['package_has_control_panel_page', 'package_has_control_panel_settings']
-        self.select_list_tokens = ['package_ext_hook']
+        self.ext_list_tokens = ['package_ext_hook']
         if (self.chosen_template_name.lower() == 'module'):
             self.tokens.append('package_has_control_panel_page')
             self.token_name.append('Has Control Panel Page?')
@@ -73,7 +73,7 @@ class EePackageGeneratorCommand(sublime_plugin.WindowCommand):
             token_name = self.token_name[self.token_index]
             if self.tokens[self.token_index] in self.boolean_tokens:
                 self.window.show_quick_panel([' -- ' + self.token_name[self.token_index] + ' --', 'No', 'Yes'], self.on_token_value)
-            elif self.tokens[self.token_index] in self.select_list_tokens:
+            elif self.tokens[self.token_index] in self.ext_list_tokens:
                 extension_hooks_display = [' -- ' + self.token_name[self.token_index] + ' --'] + self.extension_hooks
                 self.window.show_quick_panel(extension_hooks_display, self.on_token_value)
             else:
@@ -82,11 +82,14 @@ class EePackageGeneratorCommand(sublime_plugin.WindowCommand):
             self.replace_tokens()
 
     def on_token_value(self, token_value):
+        print token_value
         if self.tokens[self.token_index] in self.boolean_tokens:
             if token_value == 'Yes':
                 self.token_values[self.tokens[self.token_index]] = 'y'
             else:
                 self.token_values[self.tokens[self.token_index]] = 'n'
+        elif self.tokens[self.token_index] in self.ext_list_tokens:
+            self.token_values[self.tokens[self.token_index]] = self.extension_hooks[token_value]
         else:
             self.token_values[self.tokens[self.token_index]] = token_value
         self.token_index += 1
