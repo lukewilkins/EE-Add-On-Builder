@@ -122,5 +122,5 @@ class ${package_class_name}_ext {
 	}
 }
 
-/* End of file ext.${package_name}.php */
-/* Location: /system/expressionengine/third_party/${package_name}/ext.${package_name}.php */
+/* End of file ext.${package_short_name}.php */
+/* Location: /system/expressionengine/third_party/${package_short_name}/ext.${package_short_name}.php */

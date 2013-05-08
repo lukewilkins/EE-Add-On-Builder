@@ -84,5 +84,5 @@ class ${package_class_name}_upd {
 	}
 
 }
-/* End of file upd.${package_name}.php */
-/* Location: /system/expressionengine/third_party/${package_name}/upd.${package_name}.php */
+/* End of file upd.${package_short_name}.php */
+/* Location: /system/expressionengine/third_party/${package_short_name}/upd.${package_short_name}.php */

@@ -49,5 +49,5 @@ Include your documentation here...
 }
 
 
-/* End of file pi.${package_name}.php */
-/* Location: /system/expressionengine/third_party/${package_name}/pi.${package_name}.php */
+/* End of file pi.${package_short_name}.php */
+/* Location: /system/expressionengine/third_party/${package_short_name}/pi.${package_short_name}.php */

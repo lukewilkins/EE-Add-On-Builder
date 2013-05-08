@@ -21,7 +21,7 @@ class ${package_class_name}_mcp {
 	{
 		$this->EE =& get_instance();
 
-		$this->_base_url = BASE.AMP.'C=addons_modules'.AMP.'M=show_module_cp'.AMP.'module=${package_name}';
+		$this->_base_url = BASE.AMP.'C=addons_modules'.AMP.'M=show_module_cp'.AMP.'module=${package_short_name}';
 
 		$this->EE->cp->set_right_nav(array(
 			'module_home'	=> $this->_base_url,
@@ -37,7 +37,7 @@ class ${package_class_name}_mcp {
 	public function index()
 	{
 		$this->EE->cp->set_variable('cp_page_title',
-								lang('${package_name}_module_name'));
+								lang('${package_short_name}_module_name'));
 
 		/**
 		 * This is the addons home page, add more code here!
@@ -49,5 +49,5 @@ class ${package_class_name}_mcp {
 	 */
 
 }
-/* End of file mcp.${package_name}.php */
-/* Location: /system/expressionengine/third_party/${package_name}/mcp.${package_name}.php */
+/* End of file mcp.${package_short_name}.php */
+/* Location: /system/expressionengine/third_party/${package_short_name}/mcp.${package_short_name}.php */

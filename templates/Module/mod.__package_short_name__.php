@@ -25,5 +25,5 @@ class ${package_class_name} {
 	 */
 
 }
-/* End of file mod.${package_name}.php */
-/* Location: /system/expressionengine/third_party/${package_name}/mod.${package_name}.php */
+/* End of file mod.${package_short_name}.php */
+/* Location: /system/expressionengine/third_party/${package_short_name}/mod.${package_short_name}.php */
