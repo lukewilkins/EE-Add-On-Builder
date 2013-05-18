@@ -33,8 +33,11 @@ class EePackageGeneratorCommand(sublime_plugin.WindowCommand):
 
     def on_package_name(self, name):
         self.package_full_name = name
-        self.package_short_name = self.package_full_name.lower().replace(' ', '_')
+        self.package_short_name = self.generatate_short_name(self.package_full_name)
         self.get_package_path()
+
+    def generatate_short_name(self, value):
+        return re.sub('[^0-9a-zA-Z_]+', '', value.replace(' ', '_')).lower()
 
     def get_package_path(self):
         if self.window.folders():
@@ -106,7 +109,7 @@ class EePackageGeneratorCommand(sublime_plugin.WindowCommand):
             self.token_values[self.tokens[self.token_index]] = ext_hooks[token_value]
         elif self.tokens[self.token_index] in self.auto_build_url_title:
             self.token_values[self.tokens[self.token_index]] = token_value
-            self.token_values[self.auto_build_url_title[self.tokens[self.token_index]]] = token_value.lower().replace(' ', '_')
+            self.token_values[self.auto_build_url_title[self.tokens[self.token_index]]] = self.generatate_short_name(token_value)
         else:
             self.token_values[self.tokens[self.token_index]] = token_value
         self.token_index += 1

@@ -8,7 +8,8 @@
     "package_version": "0.1",
     "package_doc_url": "",
 
-    // Choose a default path to be appended to your current project path (default: "/system/expressionengine/third_party")
+    // Choose a default path to be appended to your current project path
+    // Default: "/system/expressionengine/third_party"
     "package_default_path": "/system/expressionengine/third_party"
 
 }
