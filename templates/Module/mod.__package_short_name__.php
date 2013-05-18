@@ -1,4 +1,4 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 /**
  * ${package_full_name} Module Front End File
@@ -12,6 +12,8 @@ class ${package_class_name} {
 
 	public $return_data;
 
+	// --------------------------------------------------------------------
+
 	/**
 	 * Constructor
 	 */
@@ -20,10 +22,13 @@ class ${package_class_name} {
 		$this->EE =& get_instance();
 	}
 
+	// --------------------------------------------------------------------
+
 	/**
 	 * Start on your custom code here...
 	 */
 
 }
+
 /* End of file mod.${package_short_name}.php */
 /* Location: /system/expressionengine/third_party/${package_short_name}/mod.${package_short_name}.php */

@@ -1,4 +1,4 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 /**
  * ${package_full_name} Module Control Panel File
@@ -13,6 +13,8 @@ class ${package_class_name}_mcp {
 	public $return_data;
 
 	private $_base_url;
+
+	// --------------------------------------------------------------------
 
 	/**
 	 * Constructor
@@ -29,6 +31,8 @@ class ${package_class_name}_mcp {
 		));
 	}
 
+	// --------------------------------------------------------------------
+
 	/**
 	 * Index Function
 	 *
@@ -44,10 +48,13 @@ class ${package_class_name}_mcp {
 		 */
 	}
 
+	// --------------------------------------------------------------------
+
 	/**
 	 * Start on your custom code here...
 	 */
 
 }
+
 /* End of file mcp.${package_short_name}.php */
 /* Location: /system/expressionengine/third_party/${package_short_name}/mcp.${package_short_name}.php */

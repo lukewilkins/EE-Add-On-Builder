@@ -1,4 +1,4 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 /**
  * ${package_full_name} Module Install/Update File
@@ -14,6 +14,8 @@ class ${package_class_name}_upd {
 
 	private $EE;
 
+	// --------------------------------------------------------------------
+
 	/**
 	 * Constructor
 	 */
@@ -21,6 +23,8 @@ class ${package_class_name}_upd {
 	{
 		$this->EE =& get_instance();
 	}
+
+	// --------------------------------------------------------------------
 
 	/**
 	 * Installation Method
@@ -47,6 +51,8 @@ class ${package_class_name}_upd {
 		return TRUE;
 	}
 
+	// --------------------------------------------------------------------
+
 	/**
 	 * Uninstall
 	 *
@@ -72,6 +78,8 @@ class ${package_class_name}_upd {
 		return TRUE;
 	}
 
+	// --------------------------------------------------------------------
+
 	/**
 	 * Module Updater
 	 *
@@ -82,7 +90,7 @@ class ${package_class_name}_upd {
 		// If you have updates, drop 'em in here.
 		return TRUE;
 	}
-
 }
+
 /* End of file upd.${package_short_name}.php */
 /* Location: /system/expressionengine/third_party/${package_short_name}/upd.${package_short_name}.php */

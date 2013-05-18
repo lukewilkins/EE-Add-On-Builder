@@ -1,4 +1,4 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 /**
  * ${package_full_name} Plugin
@@ -22,6 +22,8 @@ class ${package_class_name} {
 
     public $return_data;
 
+    // --------------------------------------------------------------------
+
     /**
      * Constructor
      */
@@ -29,6 +31,8 @@ class ${package_class_name} {
     {
         $this->EE =& get_instance();
     }
+
+    // --------------------------------------------------------------------
 
     /**
      * Plugin Usage

@@ -1,4 +1,4 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 /**
  * ${package_full_name} Extension
@@ -19,6 +19,8 @@ class ${package_class_name}_ext {
 
 	private $EE;
 
+	// --------------------------------------------------------------------
+
 	/**
 	 * Constructor
 	 *
@@ -29,6 +31,8 @@ class ${package_class_name}_ext {
 		$this->EE =& get_instance();
 		$this->settings = $settings;
 	}
+
+	// --------------------------------------------------------------------
 
 	/**
 	 * Settings Form
@@ -46,6 +50,8 @@ class ${package_class_name}_ext {
 
 		);
 	}
+
+	// --------------------------------------------------------------------
 
 	/**
 	 * Activate Extension
@@ -81,6 +87,8 @@ class ${package_class_name}_ext {
 		}
 	}
 
+	// --------------------------------------------------------------------
+
 	/**
 	 * ${package_ext_hook_method}
 	 *
@@ -91,6 +99,8 @@ class ${package_class_name}_ext {
 	{
 		// Add Code for the ${package_ext_hook} hook here.
 	}
+
+	// --------------------------------------------------------------------
 
 	/**
 	 * Disable Extension
@@ -104,6 +114,8 @@ class ${package_class_name}_ext {
 		$this->EE->db->where('class', __CLASS__);
 		$this->EE->db->delete('extensions');
 	}
+
+	// --------------------------------------------------------------------
 
 	/**
 	 * Update Extension

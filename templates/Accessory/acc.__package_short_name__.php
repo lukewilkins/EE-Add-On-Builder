@@ -1,4 +1,4 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 /**
  * ${package_full_name} Accessory
@@ -15,6 +15,8 @@ class ${package_class_name}_acc {
 	public $version			= '${package_version}';
 	public $description		= '${package_description}';
 	public $sections		= array();
+
+	// --------------------------------------------------------------------
 
 	/**
 	 * Set Sections
