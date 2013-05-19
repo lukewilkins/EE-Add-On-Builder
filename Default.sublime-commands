@@ -1,7 +1,3 @@
 [
-  {
-    "caption": "EE Package Generator: Add-On Generator for ExpressionEngine",
-    "command": "ee_package_generator"
-  }
+    {"caption": "EE Add-On Builder", "command": "ee_add_on_builder"}
 ]
-

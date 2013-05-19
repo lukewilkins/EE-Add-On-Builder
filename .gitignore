@@ -1,2 +1,4 @@
-./.DS_Store
+*.cache
 *.pyc
+.DS_Store
+package-metadata.json

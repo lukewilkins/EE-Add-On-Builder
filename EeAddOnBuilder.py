@@ -1,11 +1,12 @@
 import sublime, sublime_plugin, os, shutil, re
 
-class EEPackageGeneratorCommand(sublime_plugin.WindowCommand):
+class EeAddOnBuilderCommand(sublime_plugin.WindowCommand):
 
     def run(self):
-        self.plugin_path = os.path.join(sublime.packages_path(), "EePackageGenerator")
+        self.plugin_path = os.path.join(sublime.packages_path(), "EeAddOnBuilder")
         self.templates_path = os.path.join(self.plugin_path, "templates")
-        self.settings = sublime.load_settings('EePackageGenerator.sublime-settings')
+        self.settings = sublime.load_settings('EeAddOnBuilder.sublime-settings')
+        print vars(self.settings)
         self.template_names = []
         self.choose_template()
 
@@ -41,6 +42,7 @@ class EEPackageGeneratorCommand(sublime_plugin.WindowCommand):
 
     def get_package_path(self):
         if self.window.folders():
+            print self.settings.get('package_default_path')
             default_package_path = os.path.expanduser(self.window.folders()[0] + self.settings.get('package_default_path') + '/' + self.package_short_name)
         elif sublime.platform() == "windows":
             default_package_path = os.path.expanduser("~\\My Documents\\" + self.package_short_name)
@@ -72,11 +74,11 @@ class EEPackageGeneratorCommand(sublime_plugin.WindowCommand):
             self.token_name.append('Should this module have a Control Panel page?')
         elif (self.chosen_template_name.lower() == 'extension'):
             self.tokens.append('package_has_control_panel_settings')
-            self.token_name.append('Has Control Panel Settings?')
+            self.token_name.append('Should this extension have a Control Panel Settings page?')
             self.tokens.append('package_ext_hook')
             self.token_name.append('Initial Extension Hook')
             self.tokens.append('package_ext_hook_method')
-            self.token_name.append('Method First Extension Hook Maps To')
+            self.token_name.append('Method name that first extension hook maps to')
         elif (self.chosen_template_name.lower() == 'accessory'):
             self.tokens.append('package_section')
             self.token_name.append('Name of first Accessory Section (tab name)')
@@ -157,5 +159,5 @@ class EEPackageGeneratorCommand(sublime_plugin.WindowCommand):
         self.finish_up()
 
     def finish_up(self):
-        self.window.run_command("open_dir", {"dir": self.package_path});
         sublime.message_dialog("You're " + self.chosen_template_name.lower() + ", " + self.package_full_name + ", has been successfully created!")
+        self.window.run_command("open_dir", {"dir": self.package_path});
