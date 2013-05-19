@@ -3,7 +3,7 @@ import sublime, sublime_plugin, os, shutil, re
 class EeAddOnBuilderCommand(sublime_plugin.WindowCommand):
 
     def run(self):
-        self.plugin_path = os.path.join(sublime.packages_path(), "EeAddOnBuilder")
+        self.plugin_path = os.path.join(sublime.packages_path(), "EE-Add-On-Builder")
         self.templates_path = os.path.join(self.plugin_path, "templates")
         self.settings = sublime.load_settings('EeAddOnBuilder.sublime-settings')
         print vars(self.settings)

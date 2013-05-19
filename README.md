@@ -1,6 +1,6 @@
-#ExpressionEngine Package Generator
+#ExpressionEngine Add-On Builder
 
-Simple Package Builder for ExpressionEngine. Easily generate a base template for any type of ExpressionEngine Add-On.
+SublimeText plugin to easily build ExpressionEngine Add-Ons.
 
 ### Installation
 #### Package Control
@@ -8,19 +8,19 @@ The easiest way to install is with [Package Control][package-control].
 
  * Open the Command Palette (`Command+Shift+p` on OS X, `Control+Shift+p` on Linux/Windows).
  * Select "Package Control: Install Package"
- * Select EE Package Generator when the list appears.
+ * Select EE Add-On Builder when the list appears.
 
 #### Manual
 If you wish to manually install this plugin, simply clone this repo in to your Sublime Text 2/Packages directory.
 
 ### Settings
 
-Settings are accessed via the <kbd>Preferences</kbd> > <kbd>Package Settings</kbd> > <kbd>EE Package Generator</kbd> > <kbd>Settings - User</kbd> menu. Default settings should not be modified, as they are overwritten when the plugin updates. Instead, you should copy the relevant settings into EE Package Generator's user settings file.
+Settings are accessed via the <kbd>Preferences</kbd> > <kbd>Package Settings</kbd> > <kbd>EE Add-On Builder</kbd> > <kbd>Settings - User</kbd> menu. Default settings should not be modified, as they are overwritten when the plugin updates. Instead, you should copy the relevant settings into EE Add-On Builder's user settings file.
 
-By default, EE Package Generator is triggered by pressing `Control-Shift-N`. This can be customized by setting a specific combination in <kbd>Preferences</kbd> > <kbd>Package Settings</kbd> > <kbd>EE Package Generator</kbd> > <kbd>Key Bindings - User</kbd>
+By default, EE Add-On Builder is triggered by pressing `Control-Shift-N`. This can be customized by setting a specific combination in <kbd>Preferences</kbd> > <kbd>Package Settings</kbd> > <kbd>EE Add-On Builder</kbd> > <kbd>Key Bindings - User</kbd>
 
     [
-        { "keys": ["ctrl+shift+p"], "command": "ee_package_generator" }
+        { "keys": ["ctrl+shift+p"], "command": "ee_add_on_builder" }
     ]
 
 ### Usage
