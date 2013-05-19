@@ -17,7 +17,7 @@
                         [
                             {
                                 "command": "open_file",
-                                "args": {"file": "${packages}/EEAddOnBuilder/EeAddOnBuilder.sublime-settings"},
+                                "args": {"file": "${packages}/EE-Add-On-Builder/EeAddOnBuilder.sublime-settings"},
                                 "caption": "Settings – Default"
                             },
                             {
@@ -28,7 +28,7 @@
                             { "caption": "-" },
                             {
                                 "command": "open_file",
-                                "args": {"file": "${packages}/EEAddOnBuilder/Default.sublime-keymap"},
+                                "args": {"file": "${packages}/EE-Add-On-Builder/Default.sublime-keymap"},
                                 "caption": "Key Bindings – Default"
                             },
                             {
