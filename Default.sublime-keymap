@@ -1,3 +1,3 @@
 [
-    { "keys": ["ctrl+shift+n"], "command": "ee_package_generator" }
+    { "keys": ["ctrl+shift+p"], "command": "ee_package_generator" }
 ]

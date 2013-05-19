@@ -20,12 +20,12 @@ Settings are accessed via the <kbd>Preferences</kbd> > <kbd>Package Settings</kb
 By default, EE Package Generator is triggered by pressing `Control-Shift-N`. This can be customized by setting a specific combination in <kbd>Preferences</kbd> > <kbd>Package Settings</kbd> > <kbd>EE Package Generator</kbd> > <kbd>Key Bindings - User</kbd>
 
     [
-        { "keys": ["ctrl+shift+n"], "command": "ee_package_generator" }
+        { "keys": ["ctrl+shift+p"], "command": "ee_package_generator" }
     ]
 
 ### Usage
 
-Simply press `Control-Shift-N` while working in your desired project to view a list of all Add-On options. Options include:
+Simply press `Control-Shift-P` while working in your desired project to view a list of all Add-On options. Options include:
 
  * Accessory
  * Extension
