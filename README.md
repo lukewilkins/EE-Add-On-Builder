@@ -3,7 +3,7 @@
 SublimeText plugin to easily build ExpressionEngine Add-Ons.
 
 ### Installation
-#### Package Control (should be available soon!)
+#### Package Control
 The easiest way to install is with [Package Control][package-control].
 
  * Open the Command Palette (`Command+Shift+p` on OS X, `Control+Shift+p` on Linux/Windows).

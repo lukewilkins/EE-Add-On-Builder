@@ -1,12 +1,12 @@
 import sublime, sublime_plugin, os, shutil, re
 
+PLUGIN_PATH = os.path.dirname(os.path.abspath(__file__))
+
 class EeAddOnBuilderCommand(sublime_plugin.WindowCommand):
 
     def run(self):
-        self.plugin_path = os.path.join(sublime.packages_path(), "EE-Add-On-Builder")
-        self.templates_path = os.path.join(self.plugin_path, "templates")
+        self.templates_path = os.path.join(PLUGIN_PATH, "templates")
         self.settings = sublime.load_settings('EeAddOnBuilder.sublime-settings')
-        print vars(self.settings)
         self.template_names = []
         self.choose_template()
 
@@ -42,7 +42,6 @@ class EeAddOnBuilderCommand(sublime_plugin.WindowCommand):
 
     def get_package_path(self):
         if self.window.folders():
-            print self.settings.get('package_default_path')
             default_package_path = os.path.expanduser(self.window.folders()[0] + self.settings.get('package_default_path') + '/' + self.package_short_name)
         elif sublime.platform() == "windows":
             default_package_path = os.path.expanduser("~\\My Documents\\" + self.package_short_name)
