@@ -158,5 +158,5 @@ class EeAddOnBuilderCommand(sublime_plugin.WindowCommand):
         self.finish_up()
 
     def finish_up(self):
-        sublime.message_dialog("You're " + self.chosen_template_name.lower() + ", " + self.package_full_name + ", has been successfully created!")
+        sublime.message_dialog("Your " + self.chosen_template_name.lower() + ", " + self.package_full_name + ", has been successfully created!")
         self.window.run_command("open_dir", {"dir": self.package_path});
