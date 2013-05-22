@@ -1,0 +1,3 @@
+[
+    { "keys": ["ctrl+shift+p"], "command": "ee_add_on_builder" }
+]

@@ -17,7 +17,7 @@ If you wish to manually install this plugin, simply clone this repo in to your S
 
 Settings are accessed via the <kbd>Preferences</kbd> > <kbd>Package Settings</kbd> > <kbd>EE Add-On Builder</kbd> > <kbd>Settings - User</kbd> menu. Default settings should not be modified, as they are overwritten when the plugin updates. Instead, you should copy the relevant settings into EE Add-On Builder's user settings file.
 
-By default, EE Add-On Builder is triggered by pressing `Control-Shift-N`. This can be customized by setting a specific combination in <kbd>Preferences</kbd> > <kbd>Package Settings</kbd> > <kbd>EE Add-On Builder</kbd> > <kbd>Key Bindings - User</kbd>
+By default, EE Add-On Builder is triggered by pressing `Control-Shift-N` (`Control-Alt-p` on Windows). This can be customized by setting a specific combination in <kbd>Preferences</kbd> > <kbd>Package Settings</kbd> > <kbd>EE Add-On Builder</kbd> > <kbd>Key Bindings - User</kbd>
 
     [
         { "keys": ["ctrl+shift+p"], "command": "ee_add_on_builder" }
@@ -25,7 +25,7 @@ By default, EE Add-On Builder is triggered by pressing `Control-Shift-N`. This c
 
 ### Usage
 
-Simply press `Control-Shift-P` while working in your desired project to view a list of all Add-On options. Options include:
+Simply press `Control-Shift-P` (`Control-Alt-p` on Windows) while working in your desired project to view a list of all Add-On options. Options include:
 
  * Accessory
  * Extension
@@ -34,6 +34,8 @@ Simply press `Control-Shift-P` while working in your desired project to view a l
  * Plugin
 
 After choosing your Add-On type, you will be asked for the relevant pieces of data to get things set up. From there it's just a matter of adding your logic to the generated Add-On! You can refer to the [Expression Engine Docs][ee-docs] for more details on Add-On development.
+
+In the event that you wish to add a new Add-On type to an existing Add-On you've created (for example, you've created a module and now want to add an extension), simply go through the process again with the same Package Name and path and the plugin will allow you to automatically merge that in.
 
 [package-control]: http://wbond.net/sublime_packages/package_control
 [ee-docs]: http://ellislab.com/expressionengine/user-guide/development
