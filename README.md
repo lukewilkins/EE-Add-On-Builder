@@ -17,7 +17,7 @@ If you wish to manually install this plugin, simply clone this repo in to your S
 
 Settings are accessed via the <kbd>Preferences</kbd> > <kbd>Package Settings</kbd> > <kbd>EE Add-On Builder</kbd> > <kbd>Settings - User</kbd> menu. Default settings should not be modified, as they are overwritten when the plugin updates. Instead, you should copy the relevant settings into EE Add-On Builder's user settings file.
 
-By default, EE Add-On Builder is triggered by pressing `Control-Shift-N` (`Control-Alt-p` on Windows). This can be customized by setting a specific combination in <kbd>Preferences</kbd> > <kbd>Package Settings</kbd> > <kbd>EE Add-On Builder</kbd> > <kbd>Key Bindings - User</kbd>
+By default, EE Add-On Builder is triggered by pressing `Control-Shift-P` (`Control-Alt-p` on Windows). This can be customized by setting a specific combination in <kbd>Preferences</kbd> > <kbd>Package Settings</kbd> > <kbd>EE Add-On Builder</kbd> > <kbd>Key Bindings - User</kbd>
 
     [
         { "keys": ["ctrl+shift+p"], "command": "ee_add_on_builder" }
