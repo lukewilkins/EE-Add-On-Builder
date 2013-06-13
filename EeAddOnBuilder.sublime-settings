@@ -16,6 +16,6 @@
     // Define your own customizations to the Add-On template files. Path should contain
     // everything within the standard templates directory along with your modifications.
     // https://github.com/lukewilkins/EE-Add-On-Builder/tree/master/templates
-    "package_custom_template_path": "/Users/lukewilkins/Desktop/templates/"
+    "package_custom_template_path": ""
 
 }
