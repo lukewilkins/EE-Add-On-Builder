@@ -15,8 +15,6 @@ class ${package_class_name}_ft extends EE_Fieldtype {
         'version'   => '${package_version}'
     );
 
-    // --------------------------------------------------------------------
-
     /**
      * Post delete custom logic after an entry is deleted
      *
@@ -29,9 +27,6 @@ class ${package_class_name}_ft extends EE_Fieldtype {
     {
 
     }
-
-
-    // --------------------------------------------------------------------
 
     /**
      * Display Field on Publish Page
@@ -46,9 +41,6 @@ class ${package_class_name}_ft extends EE_Fieldtype {
 
     }
 
-
-    // --------------------------------------------------------------------
-
     /**
      * Display Global Settings
      *
@@ -60,8 +52,6 @@ class ${package_class_name}_ft extends EE_Fieldtype {
     {
 
     }
-
-    // --------------------------------------------------------------------
 
     /**
      * Display Settings Screen for single field
@@ -86,9 +76,6 @@ class ${package_class_name}_ft extends EE_Fieldtype {
         */
     }
 
-
-    // --------------------------------------------------------------------
-
     /**
      * Install Fieldtype
      *
@@ -100,8 +87,6 @@ class ${package_class_name}_ft extends EE_Fieldtype {
     {
 
     }
-
-    // --------------------------------------------------------------------
 
     /**
      * Preprocess data on frontend
@@ -116,8 +101,6 @@ class ${package_class_name}_ft extends EE_Fieldtype {
 
     }
 
-    // --------------------------------------------------------------------
-
     /**
      * Post save custom logic after an entry is saved
      *
@@ -131,8 +114,6 @@ class ${package_class_name}_ft extends EE_Fieldtype {
 
     }
 
-    // --------------------------------------------------------------------
-
     /**
      * Post save settings additional processing after the field is created/modified
      *
@@ -145,9 +126,6 @@ class ${package_class_name}_ft extends EE_Fieldtype {
     {
 
     }
-
-
-    // --------------------------------------------------------------------
 
     /**
      * Replace tag
@@ -164,8 +142,6 @@ class ${package_class_name}_ft extends EE_Fieldtype {
 
     }
 
-    // --------------------------------------------------------------------
-
     /**
      * Save Data
      *
@@ -179,10 +155,6 @@ class ${package_class_name}_ft extends EE_Fieldtype {
 
     }
 
-
-
-    // --------------------------------------------------------------------
-
     /**
      * Save Global Settings
      *
@@ -194,9 +166,6 @@ class ${package_class_name}_ft extends EE_Fieldtype {
     {
         return array_merge($this->settings, $_POST);
     }
-
-
-    // --------------------------------------------------------------------
 
     /**
      * Save Settings
@@ -211,8 +180,6 @@ class ${package_class_name}_ft extends EE_Fieldtype {
 
     }
 
-    // --------------------------------------------------------------------
-
     /**
      * Uninstall Fieldtype
      *
@@ -226,8 +193,6 @@ class ${package_class_name}_ft extends EE_Fieldtype {
 
     }
 
-    // --------------------------------------------------------------------
-
     /**
      * Uninstall Fieldtype - channel_data is dropped automatically
      *
@@ -239,8 +204,6 @@ class ${package_class_name}_ft extends EE_Fieldtype {
     {
 
     }
-
-    // --------------------------------------------------------------------
 
     /**
      * Validate field input

@@ -12,8 +12,6 @@ class ${package_class_name} {
 
 	public $return_data;
 
-	// --------------------------------------------------------------------
-
 	/**
 	 * Constructor
 	 */
@@ -21,8 +19,6 @@ class ${package_class_name} {
 	{
 		$this->EE =& get_instance();
 	}
-
-	// --------------------------------------------------------------------
 
 	/**
 	 * Start on your custom code here...

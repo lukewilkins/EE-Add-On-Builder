@@ -10,6 +10,12 @@
 
     // Choose a default path to be appended to your current project path
     // Default: "/system/expressionengine/third_party"
-    "package_default_path": "/system/expressionengine/third_party"
+    "package_default_path": "/system/expressionengine/third_party",
+
+    // Custom Add-On template path
+    // Define your own customizations to the Add-On template files. Path should contain
+    // everything within the standard templates directory along with your modifications.
+    // https://github.com/lukewilkins/EE-Add-On-Builder/tree/master/templates
+    "package_custom_template_path": "/Users/lukewilkins/Desktop/templates/"
 
 }

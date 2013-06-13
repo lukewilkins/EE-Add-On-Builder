@@ -14,8 +14,6 @@ class ${package_class_name}_mcp {
 
 	private $_base_url;
 
-	// --------------------------------------------------------------------
-
 	/**
 	 * Constructor
 	 */
@@ -31,8 +29,6 @@ class ${package_class_name}_mcp {
 		));
 	}
 
-	// --------------------------------------------------------------------
-
 	/**
 	 * Index Function
 	 *
@@ -47,8 +43,6 @@ class ${package_class_name}_mcp {
 		 * This is the addons home page, add more code here!
 		 */
 	}
-
-	// --------------------------------------------------------------------
 
 	/**
 	 * Start on your custom code here...

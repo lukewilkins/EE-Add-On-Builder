@@ -11,6 +11,8 @@ class EeAddOnBuilderCommand(sublime_plugin.WindowCommand):
         self.choose_template()
 
     def choose_template(self):
+        if self.settings.get('package_custom_template_path') != '' and os.path.isdir(self.settings.get('package_custom_template_path')):
+            self.templates_path = self.settings.get('package_custom_template_path');
         files = self.get_templates()
         for file_name in files:
             if os.path.isdir(os.path.join(self.templates_path, file_name)):

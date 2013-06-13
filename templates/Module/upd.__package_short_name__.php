@@ -14,8 +14,6 @@ class ${package_class_name}_upd {
 
 	private $EE;
 
-	// --------------------------------------------------------------------
-
 	/**
 	 * Constructor
 	 */
@@ -23,8 +21,6 @@ class ${package_class_name}_upd {
 	{
 		$this->EE =& get_instance();
 	}
-
-	// --------------------------------------------------------------------
 
 	/**
 	 * Installation Method
@@ -51,8 +47,6 @@ class ${package_class_name}_upd {
 		return TRUE;
 	}
 
-	// --------------------------------------------------------------------
-
 	/**
 	 * Uninstall
 	 *
@@ -77,8 +71,6 @@ class ${package_class_name}_upd {
 
 		return TRUE;
 	}
-
-	// --------------------------------------------------------------------
 
 	/**
 	 * Module Updater

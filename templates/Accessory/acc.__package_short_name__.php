@@ -16,8 +16,6 @@ class ${package_class_name}_acc {
 	public $description		= '${package_description}';
 	public $sections		= array();
 
-	// --------------------------------------------------------------------
-
 	/**
 	 * Set Sections
 	 */
