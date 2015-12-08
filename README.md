@@ -11,7 +11,7 @@ The easiest way to install is with [Package Control][package-control].
  * Search/Select "ExpressionEngine Add-On Builder" (or EE Add-On Builder) when the list appears.
 
 #### Manual
-If you wish to manually install this plugin, simply clone this repo in to your Sublime Text 2/Packages directory.
+If you wish to manually install this plugin, simply clone this repo in to your Sublime Text [2/3]/Packages directory.
 
 ### Settings
 
