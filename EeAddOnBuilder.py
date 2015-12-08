@@ -142,7 +142,7 @@ class EeAddOnBuilderCommand(sublime_plugin.WindowCommand):
                 template = file_ref.read()
                 file_ref.close()
 
-                for token, value in self.token_values.iteritems():
+                for token, value in self.token_values.items():
                     r = re.compile(r"\${" + token + "}")
                     template = r.sub(value, template)
 
@@ -150,7 +150,7 @@ class EeAddOnBuilderCommand(sublime_plugin.WindowCommand):
                 file_ref.write(template)
                 file_ref.close()
 
-                for token, value in self.token_values.iteritems():
+                for token, value in self.token_values.items():
                     tokened_file = filename.replace('__' + token + '__', value);
                     if (tokened_file != filename):
                         if os.path.exists(os.path.join(root, tokened_file)):
