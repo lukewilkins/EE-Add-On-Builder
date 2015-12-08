@@ -12,12 +12,12 @@
                 "children":
                 [
                     {
-                        "caption": "EE Add-On Builder",
+                        "caption": "ExpressionEngine Add-On Builder",
                         "children":
                         [
                             {
                                 "command": "open_file",
-                                "args": {"file": "${packages}/EE Add-On Builder/EeAddOnBuilder.sublime-settings"},
+                                "args": {"file": "${packages}/ExpressionEngine Add-On Builder/EeAddOnBuilder.sublime-settings"},
                                 "caption": "Settings – Default"
                             },
                             {
@@ -28,7 +28,7 @@
                             { "caption": "-" },
                             {
                                 "command": "open_file",
-                                "args": {"file": "${packages}/EE Add-On Builder/Default.sublime-keymap"},
+                                "args": {"file": "${packages}/ExpressionEngine Add-On Builder/Default.sublime-keymap"},
                                 "caption": "Key Bindings – Default"
                             },
                             {
